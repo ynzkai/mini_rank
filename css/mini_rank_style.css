@@ -1,0 +1,16 @@
+.stars {
+display: inline-block;
+}
+
+.stars .star-wrapper {
+  width: 24px;
+  height: 24px;
+  overflow: hidden;
+  float: left;
+  cursor: pointer;
+}
+
+.stars .star-wrapper .star {
+  position: relative;
+}
+
