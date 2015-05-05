@@ -62,6 +62,7 @@ function highlight_star(ele, width) {
   }
 }
 
+/*
 function has_class(ele, cls) {
 	return ele.className.match(new RegExp('(\\s|^)'+cls+'(\\s|$)'));
 }
@@ -70,4 +71,4 @@ function add_class(ele, cls) {
 	if(!has_class(ele, cls))
 		ele.className += " " + cls;
 }
-
+*/

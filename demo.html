@@ -4,13 +4,26 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script type="text/javascript" src="js/mini_rank.js"></script>
+    <script type="text/javascript" src="js/mini_rank_o.js"></script>
     <script type="text/javascript">
     window.onload = function() {
-      init_mini_rank("star1", 1, 24, function() {});
-      init_mini_rank("star2", 2, 24, function() {});
-      init_mini_rank("star3", 3, 24, function() {});
-      init_mini_rank("star4", 4, 24, function() {});
+		/* function edition
+        init_mini_rank("star1", 1, 24, function() {});
+        init_mini_rank("star2", 2, 24, function() {});
+        init_mini_rank("star3", 3, 24, function() {});
+        init_mini_rank("star4", 4, 24, function() {});
+	    */
+
+		var star1 = new MiniRank("star1", 1, 24, function(r) {alert(r)});
+		var star2 = new MiniRank("star2", 2, 24, function(r) {alert(r)});
+		var star3 = new MiniRank("star3", 3, 24, function(r) {alert(r)});
+		var star4 = new MiniRank("star4", 4, 24, function(r) {alert(r)});
+		star1.init();
+		star2.init();
+		star3.init();
+		star4.init();
+
+
     };
 
   </script>
@@ -32,86 +45,81 @@
     <div class="container">
       <h1>This is a mini-rank.js demo</h1>
       <div class="wrapper">
+
       <div id="star1" class="stars">
-      <div class="star-wrapper">
-        <img class="star" src="star.png" />
-    </div>
-      <div class="star-wrapper">
-        <img class="star" src="star.png" />
-    </div>
-      <div class="star-wrapper">
-        <img class="star" src="star.png" />
-    </div>
-      <div class="star-wrapper">
-        <img class="star" src="star.png" />
-    </div>
-      <div class="star-wrapper">
-        <img class="star" src="star.png" />
-    </div>
-      </div>
-  </div>
+        <div class="star-wrapper">
+          <img class="star" src="star.png" />
+		</div>
+		<div class="star-wrapper">
+		  <img class="star" src="star.png" />
+	    </div>
+	    <div class="star-wrapper">
+		  <img class="star" src="star.png" />
+		</div>
+		<div class="star-wrapper">
+		  <img class="star" src="star.png" />
+		</div>
+		<div class="star-wrapper">
+		  <img class="star" src="star.png" />
+		</div>
+	  </div>
 
-    <div class="wrapper">
       <div id="star2" class="stars">
-      <div class="star-wrapper">
-        <img class="star" src="star.png" />
-    </div>
-      <div class="star-wrapper">
-        <img class="star" src="star.png" />
-    </div>
-      <div class="star-wrapper">
-        <img class="star" src="star.png" />
-    </div>
-      <div class="star-wrapper">
-        <img class="star" src="star.png" />
-    </div>
-      <div class="star-wrapper">
-        <img class="star" src="star.png" />
-    </div>
-      </div>
-  </div>
+        <div class="star-wrapper">
+          <img class="star" src="star.png" />
+		</div>
+		<div class="star-wrapper">
+		  <img class="star" src="star.png" />
+	    </div>
+	    <div class="star-wrapper">
+		  <img class="star" src="star.png" />
+		</div>
+		<div class="star-wrapper">
+		  <img class="star" src="star.png" />
+		</div>
+		<div class="star-wrapper">
+		  <img class="star" src="star.png" />
+		</div>
+	  </div>
 
-    <div class="wrapper">
       <div id="star3" class="stars">
-      <div class="star-wrapper">
-        <img class="star" src="star2.png" />
-    </div>
-      <div class="star-wrapper">
-        <img class="star" src="star2.png" />
-    </div>
-      <div class="star-wrapper">
-        <img class="star" src="star2.png" />
-    </div>
-      <div class="star-wrapper">
-        <img class="star" src="star2.png" />
-    </div>
-      <div class="star-wrapper">
-        <img class="star" src="star2.png" />
-    </div>
-      </div>
-      </div>
-    </div>
+        <div class="star-wrapper">
+          <img class="star" src="star2.png" />
+		</div>
+		<div class="star-wrapper">
+		  <img class="star" src="star2.png" />
+	    </div>
+	    <div class="star-wrapper">
+		  <img class="star" src="star2.png" />
+		</div>
+		<div class="star-wrapper">
+		  <img class="star" src="star2.png" />
+		</div>
+		<div class="star-wrapper">
+		  <img class="star" src="star2.png" />
+		</div>
+	  </div>
 
-    <div class="wrapper">
       <div id="star4" class="stars">
-      <div class="star-wrapper">
-        <img class="star" src="star3.png" />
-    </div>
-      <div class="star-wrapper">
-        <img class="star" src="star3.png" />
-    </div>
-      <div class="star-wrapper">
-        <img class="star" src="star3.png" />
-    </div>
-      <div class="star-wrapper">
-        <img class="star" src="star3.png" />
-    </div>
-      <div class="star-wrapper">
-        <img class="star" src="star3.png" />
-    </div>
-      </div>
-      </div>
-    </div>
+        <div class="star-wrapper">
+          <img class="star" src="star3.png" />
+		</div>
+		<div class="star-wrapper">
+		  <img class="star" src="star3.png" />
+	    </div>
+	    <div class="star-wrapper">
+		  <img class="star" src="star3.png" />
+		</div>
+		<div class="star-wrapper">
+		  <img class="star" src="star3.png" />
+		</div>
+		<div class="star-wrapper">
+		  <img class="star" src="star3.png" />
+		</div>
+	  </div>
+
+      </div><!--end wrapper-->
+    </div><!--end container-->
 
   </body>
 </html>
